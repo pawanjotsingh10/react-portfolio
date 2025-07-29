@@ -7,10 +7,10 @@ export const HeroSection=()=>{
             <div className="space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                     <span className="opacity-0 animate-fade-in">Hi, I'm</span>
-                    <span className="text-primary opacity-0 animate-fade-in-delay-1">Pawanjot</span>
-                    <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Singh</span>
+                    <span className="text-primary opacity-0 animate-fade-in-delay-1 ml-2">Pawanjot</span>
+                    <span className="text-gradient opacity-0 animate-fade-in-delay-2">Singh</span>
                 </h1>
-                <p className="text-sm md:text-sm text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+                <p className="text-sm md:text-sm text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
                     ioasigohaiosh oigoisdgois osdhgo sdogiiosdgoihsdg ohsdoighiosdg oihsdgiohsoidg 
                     oisjdgisdjg isdgiohoisdg ohisodghoisdg oihsdioghoisdhg oihsdgiohsoidgoihsdoghiosdhg
                     oshgihsiodghiosdhgioshdigohsoidghiosdh oihsdghosdhgoihsdihiosg
@@ -25,6 +25,7 @@ export const HeroSection=()=>{
         </div>
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+        {/* tranform translate is used because I positioned the div absolute to make it truly centered */}
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-primary"/>
         </div>
