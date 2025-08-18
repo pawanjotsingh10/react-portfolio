@@ -3,9 +3,13 @@ import { useEffect, useState } from "react"
 const skills=[
     {name:"React", level:95, category:"frontend"},
 
-    {name:"Node.js", level:10, category:"backend"},
+    {name:"Angular", level:70, category:"frontend"},
+    {name:"HTML", level:60, category:"frontend"},
+    {name:"CSS", level:60, category:"frontend"},
 
-    {name:"Git/GitHub", level:60, category:"tools"}
+    {name:"Git/GitHub", level:60, category:"tools"},
+
+    {name:"Node.Js", level:10, category:"backend"},
 ]
 
 const categories=["all","frontend","backend", "tools"]
