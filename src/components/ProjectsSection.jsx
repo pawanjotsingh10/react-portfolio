@@ -4,7 +4,7 @@ const projects = [
     {
         id: 1,
         title: "Smart-Serve",
-        description: "desciption of project one",
+        description: "A clean dashboard to showcase performance with grids and charts",
         image: "/projects/Smart-Serve/ss_03.png",
         tags: ["Typescript", "JavaScript","Angular","HTML","CSS"],
         demoUrl: "#",
@@ -13,7 +13,7 @@ const projects = [
     {
         id: 2,
         title: "My-Notes",
-        description: "desciption of project two",
+        description: "A simple To Do notes app with CRUD implementation",
         image: "/projects/My-Notes/notes_03.png",
         tags: ["JavaScript","React", "HTML","CSS"],
         demoUrl: "#",
