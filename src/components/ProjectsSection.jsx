@@ -3,31 +3,31 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react"
 const projects = [
     {
         id: 1,
-        title: "one",
+        title: "Smart-Serve",
         description: "desciption of project one",
-        image: "/projects/project1.jpg",
-        tags: ["Typescript", "TailwindCSS", "Supabase"],
+        image: "/projects/Smart-Serve/ss_03.png",
+        tags: ["Typescript", "JavaScript","Angular","HTML","CSS"],
         demoUrl: "#",
-        githubUrl: "#"
+        githubUrl: "https://github.com/pawanjotsingh10/Smart-Serve"
     },
     {
         id: 2,
-        title: "two",
+        title: "My-Notes",
         description: "desciption of project two",
-        image: "/projects/project2.jpg",
-        tags: ["Typescript", "TailwindCSS", "Supabase"],
+        image: "/projects/My-Notes/notes_03.png",
+        tags: ["JavaScript","React", "HTML","CSS"],
         demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 3,
-        title: "three",
-        description: "desciption of project three",
-        image: "/projects/project3.jpg",
-        tags: ["Typescript", "TailwindCSS", "Supabase"],
-        demoUrl: "#",
-        githubUrl: "#"
+        githubUrl: "https://github.com/pawanjotsingh10/My-Notes"
     }
+    // {
+    //     id: 3,
+    //     title: "three",
+    //     description: "desciption of project three",
+    //     image: "/projects/project3.jpg",
+    //     tags: ["Typescript", "TailwindCSS", "Supabase"],
+    //     demoUrl: "#",
+    //     githubUrl: "#"
+    // }
 ]
 
 export const ProjectsSection = () => {
@@ -38,10 +38,10 @@ export const ProjectsSection = () => {
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                iosdgiosogh oshdgiosg oihsdgio osidghioshdgoih sdoighoisdhgoishdg ooio
+                Following are the projects I created for practice (Apart from this Online Portfolio!)
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-25">
                 {projects.map((project, key) => (
                     <div
                         key={key}
@@ -67,11 +67,11 @@ export const ProjectsSection = () => {
 
                             <div className="flex justify-between items-center">
                                 <div className="flex space-x-3">
-                                    <a href={project.demoUrl}
+                                    {/* <a href={project.demoUrl}
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                         target="_blank">
                                         <ExternalLink size={20} />
-                                    </a>
+                                    </a> */}
                                     <a href={project.githubUrl}
                                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                         target="_blank">
@@ -86,7 +86,7 @@ export const ProjectsSection = () => {
 
             <div className="text-center mt-12">
                 <a className="cosmic-button w-fit flex items-center mx-auto gap-2"
-                    href="https://github.com"
+                    href="https://github.com/pawanjotsingh10"
                     target="_blank">
                     Check my GitHub <ArrowRight size={16} />
                 </a>

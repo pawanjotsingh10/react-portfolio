@@ -1,5 +1,5 @@
 import { Toast } from "@radix-ui/react-toast"
-import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react"
+import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "../hooks/use-toast"
 
@@ -32,45 +32,45 @@ export const ContactSection = () => {
                 Feel free to reach out!
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-12">
                 <div className="space-y-8">
                     <h3 className="text-2xl font-semibold mb-6">
                         Contact Information
                     </h3>
 
-                    <div className="space-y-6 justify-center">
-                        <div className="flex items-start space-x-4">
+                    <div className="space-y-6 justify-center items-center">
+                        <div className="flex flex-col items-center space-x-0">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Mail className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Email</h4>
-                                <a href="mailto:hello@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                                hello@gmail.com
+                                <a href="mailto:pawanjotsingh10@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                pawanjotsingh10@gmail.com
                                 </a>
                             </div>
                         </div>
 
-                        <div className="flex items-start space-x-4">
+                        <div className="flex flex-col items-center space-x-0">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Phone className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Phone</h4>
-                                <a className="text-muted-foreground hover:text-primary transition-colors">
-                                Perth, WA, Australia
+                                <a href="tel:+61402532022" className="text-muted-foreground hover:text-primary transition-colors">
+                                +61 402-532-022
                                 </a>
                             </div>
                         </div>
 
-                        <div className="flex items-start space-x-4">
+                        <div className="flex flex-col items-center space-x-0">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <MapPin className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Location</h4>
                                 <a href="tel:+61402532022" className="text-muted-foreground hover:text-primary transition-colors">
-                                +61 402-532-022
+                                Perth, WA, Australia
                                 </a>
                             </div>
                         </div>
@@ -78,19 +78,20 @@ export const ContactSection = () => {
                     <div className="pt-8">
                         <h4>Connect with Me</h4>
                         <div className="flex space-x-4 justify-center">
-                            <a href="#" target="_blank">
+                            {/* <a href="#" target="_blank">
                                 <Instagram/>
-                            </a>
-                            <a href="#" target="_blank">
-                                <Twitter/>
-                            </a>
-                            <a href="#" target="_blank">
+                            </a> */}
+                            <a href="https://www.linkedin.com/in/pawanjotsingh10" target="_blank">
                                 <Linkedin/>
                             </a>
+                            <a href="https://github.com/pawanjotsingh10" target="_blank">
+                                <Github/>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
-                <div className="bg-card p-8 rounded-lg shadow-xs" onSubmit={handleSubmit}>
+                {/* <div className="bg-card p-8 rounded-lg shadow-xs" onSubmit={handleSubmit}>
                     <h3 className="text-2xl font-semibold mb-6">
                         Send a Message
                     </h3>
@@ -120,7 +121,7 @@ export const ContactSection = () => {
                         </button>
 
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     </section>
