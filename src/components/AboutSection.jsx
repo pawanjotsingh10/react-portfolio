@@ -11,11 +11,13 @@ export const AboutSection=()=>{
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* mobile 1 col- medium and above 2 cols */}
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">Passionate web Developer</h3>
+                    <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
 
-                    <p className="text-sm text-muted-foreground">iosdgoisdg oijsdiog oishdgoihoisdhgoiho oishdgih</p>
+                    <p className="text-sm text-muted-foreground">
+                    I craft responsive and user-friendly web applications using React, Angular, and modern technologies
+                    </p>
 
-                    <p className="text-sm text-muted-foreground">oishdiogh oihdsigh oihsdoigh soidhgiohsoidgh</p>
+                    <p className="text-sm text-muted-foreground">Always curious, always building!</p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">
@@ -36,8 +38,10 @@ export const AboutSection=()=>{
                             </div>
 
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Web development</h4>
-                                <p className="text-sm text-muted-foreground">oijoijsdg o soidhgoi sdgoihoisdg oihsdg</p>
+                                <h4 className="font-semibold text-lg">Web Development</h4>
+                                <p className="text-sm text-muted-foreground">
+                                Building responsive and scalable front-end applications with React, Angular, and modern frameworks
+                                </p>
                             </div>
 
                         </div>
@@ -50,8 +54,10 @@ export const AboutSection=()=>{
                             </div>
 
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">UI/US Design</h4>
-                                <p className="text-sm text-muted-foreground">oijoijsdg o soidhgoi sdgoihoisdg oihsdg</p>
+                                <h4 className="font-semibold text-lg">UI/UX Mindset</h4>
+                                <p className="text-sm text-muted-foreground">
+                                Creating clean, user-friendly interfaces and enhancing user experience in collaboration with designers
+                                </p>
                             </div>
 
                         </div>
@@ -64,8 +70,8 @@ export const AboutSection=()=>{
                             </div>
 
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Project Management</h4>
-                                <p className="text-sm text-muted-foreground">oijoijsdg o soidhgoi sdgoihoisdg oihsdg</p>
+                                <h4 className="font-semibold text-lg">Collaboration & Growth</h4>
+                                <p className="text-sm text-muted-foreground">Team player with a strong drive for continuous learning and applying new technologies</p>
                             </div>
 
                         </div>
