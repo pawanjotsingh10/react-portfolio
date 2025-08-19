@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
                 Following are the projects I created for practice (Apart from this Online Portfolio!)
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-25">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-25">
                 {projects.map((project, key) => (
                     <div
                         key={key}
@@ -85,7 +85,7 @@ export const ProjectsSection = () => {
             </div>
 
             <div className="text-center mt-12">
-                <a className="cosmic-button w-fit flex items-center mx-auto gap-2"
+                <a className="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium w-fit flex items-center mx-auto gap-2"
                     href="https://github.com/pawanjotsingh10"
                     target="_blank">
                     Check my GitHub <ArrowRight size={16} />
