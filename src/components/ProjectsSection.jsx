@@ -47,7 +47,7 @@ export const ProjectsSection = () => {
                         key={key}
                         className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
                         <div className="h-48 overflow-hidden">
-                            <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                            <img src={project.image} alt={project.title} className="w-fit h-fit object-cover transition-transform duration-500 group-hover:scale-110" />
                         </div>
 
                         <div className="p-4">
