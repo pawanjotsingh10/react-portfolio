@@ -15,7 +15,7 @@ export const HeroSection=()=>{
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-                    <a href="#projects" className="cosmic-button">
+                    <a href="#projects" className="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium">
                         View my work
                     </a>
                 </div>
