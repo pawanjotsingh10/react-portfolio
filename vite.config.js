@@ -10,6 +10,9 @@ export default defineConfig({
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'cosmic-button',
+  ],
   resolve:{
     alias:{
       "@": path.resolve(__dirname,"./src")
