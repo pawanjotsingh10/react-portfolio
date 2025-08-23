@@ -7,13 +7,13 @@ const skills=[
     {name:"HTML", level:60, category:"frontend"},
     {name:"CSS", level:60, category:"frontend"},
 
-    {name:"Git/GitHub", level:60, category:"tools"},
+    {name:"Git/GitHub", level:60, category:"tools"}
 
-    {name:"Node.Js", level:10, category:"backend"},
+    // {name:"Node.Js", level:10, category:"backend"},
 ]
 
-const categories=["all","frontend","backend", "tools"]
-
+// const categories=["all","frontend","backend", "tools"]
+const categories=["all","frontend", "tools"]
 
 export const SkillsSection=({ skill })=>{
 

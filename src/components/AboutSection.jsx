@@ -24,7 +24,12 @@ export const AboutSection=()=>{
                             Get in touch
                         </a>
 
-                        <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                        <a href="public/resume/Pawanjot SINGH_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        // To tackle tabnabbing
+                        // download="Pawanjot SINGH_Resume.pdf" 
+                        className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
                             Download Resume
                         </a>
                     </div>
