@@ -45,7 +45,12 @@ export const ContactSection = () => {
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Email</h4>
-                                <a href="mailto:pawanjotsingh10@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                <a  
+                                href="https://mail.google.com/mail/?view=cm&to=pawanjotsingh10@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                // To tackle tabnabbing
+                                className="text-muted-foreground hover:text-primary transition-colors">
                                 pawanjotsingh10@gmail.com
                                 </a>
                             </div>
@@ -69,7 +74,12 @@ export const ContactSection = () => {
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Location</h4>
-                                <a href="tel:+61402532022" className="text-muted-foreground hover:text-primary transition-colors">
+                                <a
+                                href="https://www.google.com/maps?q=Perth,WA,Australia"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                // To tackle tabnabbing
+                                className="text-muted-foreground hover:text-primary transition-colors">
                                 Perth, WA, Australia
                                 </a>
                             </div>
