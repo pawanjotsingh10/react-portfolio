@@ -24,7 +24,7 @@ export const AboutSection=()=>{
                             Get in touch
                         </a>
 
-                        <a href="public/resume/Pawanjot SINGH_Resume.pdf"
+                        <a href="/resume/Pawanjot SINGH_Resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         // To tackle tabnabbing
