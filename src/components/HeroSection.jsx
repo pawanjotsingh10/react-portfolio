@@ -11,7 +11,7 @@ export const HeroSection=()=>{
                     <span className="text-gradient opacity-0 animate-fade-in-delay-2">Singh</span>
                 </h1>
                 <p className="text-sm md:text-sm text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                Frontend Developer | React & Angular | Building clean, responsive, and user-friendly web applications
+                Frontend Developer | React | Building clean, responsive, and user-friendly web applications
                 </p>
 
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
