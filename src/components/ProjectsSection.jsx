@@ -6,7 +6,7 @@ const projects = [
         title: "Smart-Serve",
         description: "A clean dashboard to showcase performance with grids and charts",
         image: "/projects/Smart-Serve/ss_03.png",
-        tags: ["Typescript", "JavaScript","Angular","HTML","CSS"],
+        tags: ["Typescript", "JavaScript", "Angular", "HTML", "CSS"],
         demoUrl: "#",
         githubUrl: "https://github.com/pawanjotsingh10/Smart-Serve"
     },
@@ -15,7 +15,7 @@ const projects = [
         title: "My-Notes",
         description: "A simple To Do notes app with CRUD implementation",
         image: "/projects/My-Notes/notes_03.png",
-        tags: ["JavaScript","React", "HTML","CSS"],
+        tags: ["JavaScript", "React", "HTML", "CSS"],
         demoUrl: "#",
         githubUrl: "https://github.com/pawanjotsingh10/My-Notes"
     }
@@ -37,7 +37,7 @@ export const ProjectsSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Featured <span className="text-primary">Projects</span>
             </h2>
 
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
                 Following are the projects I created for practice (Apart from this Online Portfolio!)
             </p>
 
@@ -61,7 +61,7 @@ export const ProjectsSection = () => {
 
                             <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
 
-                            <p className="text-muted-foreground text-sm mb-4">
+                            <p className="text-gray-500 text-sm mb-4">
                                 {project.description}
                             </p>
 

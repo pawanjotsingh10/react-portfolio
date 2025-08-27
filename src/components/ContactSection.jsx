@@ -5,20 +5,20 @@ import { useToast } from "../hooks/use-toast"
 
 export const ContactSection = () => {
 
-    const[isSubmitting,setIsSubmitting]=useState(false)
+    const [isSubmitting, setIsSubmitting] = useState(false)
 
-    const {toast}=useToast()
+    const { toast } = useToast()
 
-    const handleSubmit=(e)=>{
+    const handleSubmit = (e) => {
         e.preventDefault()
 
         setIsSubmitting(true)
 
-        setTimeout(()=>{
-            toast({title:"Message sent!", description:"Thank you for your message. I'll get back to you soon."})
+        setTimeout(() => {
+            toast({ title: "Message sent!", description: "Thank you for your message. I'll get back to you soon." })
             setIsSubmitting(false)
-        },1500)
-        
+        }, 1500)
+
     }
 
     return <section id="contact"
@@ -28,59 +28,59 @@ export const ContactSection = () => {
                 Get In <span className="text-primary">Touch</span>
             </h2>
 
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
                 Feel free to reach out!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-1 gap-12">
                 <div className="space-y-8">
                     <h3 className="text-2xl font-semibold mb-6">
-                        Contact Information
+                        Contact <span className="text-primary">Information</span>
                     </h3>
 
                     <div className="space-y-6 justify-center items-center">
                         <div className="flex flex-col items-center space-x-0">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Mail className="h-6 w-6 text-primary"/>
+                                <Mail className="h-6 w-6 text-primary" />
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Email</h4>
-                                <a  
-                                href="https://mail.google.com/mail/?view=cm&to=pawanjotsingh10@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                // To tackle tabnabbing
-                                className="text-muted-foreground hover:text-primary transition-colors">
-                                pawanjotsingh10@gmail.com
+                                <a
+                                    href="https://mail.google.com/mail/?view=cm&to=pawanjotsingh10@gmail.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    // To tackle tabnabbing
+                                    className="text-gray-500 hover:text-primary transition-colors">
+                                    pawanjotsingh10@gmail.com
                                 </a>
                             </div>
                         </div>
 
                         <div className="flex flex-col items-center space-x-0">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Phone className="h-6 w-6 text-primary"/>
+                                <Phone className="h-6 w-6 text-primary" />
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Phone</h4>
-                                <a href="tel:+61402532022" className="text-muted-foreground hover:text-primary transition-colors">
-                                +61 402-532-022
+                                <a href="tel:+61402532022" className="text-gray-500 hover:text-primary transition-colors">
+                                    +61 402-532-022
                                 </a>
                             </div>
                         </div>
 
                         <div className="flex flex-col items-center space-x-0">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <MapPin className="h-6 w-6 text-primary"/>
+                                <MapPin className="h-6 w-6 text-primary" />
                             </div>
                             <div className="">
                                 <h4 className="font-medium">Location</h4>
                                 <a
-                                href="https://www.google.com/maps?q=Perth,WA,Australia"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                // To tackle tabnabbing
-                                className="text-muted-foreground hover:text-primary transition-colors">
-                                Perth, WA, Australia
+                                    href="https://www.google.com/maps?q=Perth,WA,Australia"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    // To tackle tabnabbing
+                                    className="text-gray-500 hover:text-primary transition-colors">
+                                    Perth, WA, Australia
                                 </a>
                             </div>
                         </div>
@@ -92,12 +92,12 @@ export const ContactSection = () => {
                                 <Instagram/>
                             </a> */}
                             <a href="https://www.linkedin.com/in/pawanjotsingh10" target="_blank">
-                                <Linkedin/>
+                                <Linkedin />
                             </a>
                             <a href="https://github.com/pawanjotsingh10" target="_blank">
-                                <Github/>
+                                <Github />
                             </a>
-                            
+
                         </div>
                     </div>
                 </div>
