@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react"
 import { useEffect, useState } from "react"
+import { useLocation, useNavigate } from "react-router-dom"
 
 const navItems = [
     { name: "Home", href: "/#hero" },
@@ -16,6 +17,9 @@ export const NavBar = () => {
 
     const [isScrolled, setIsScrolled] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,10 +43,24 @@ export const NavBar = () => {
 
     }, [isMenuOpen])
 
+    const handleClick = (href) => {
+        if (href.startsWith("/#")) {
+          if (location.pathname !== "/") navigate("/"); // go to home first
+          setTimeout(() => {
+            const el = document.querySelector(href.replace("/", ""));
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          }, 50);
+        } else {
+          navigate(href);
+        }
+        setIsMenuOpen(false);
+      };
+      
+
     
 
     return <nav className={`fixed w-full z-40 transition-all duration-300 
-                ${isScrolled ? "py-6 bg-background/90  backdrop-blue-md shadow-md" : "py-9"}`}>
+                ${isScrolled ? "py-9 md:py-6 bg-background/90  backdrop-blue-md shadow-md" : "py-9"}`}>
         {/* when scrolled nav bar will get thin and opacity will be little less */}
         <div className="ml-15 mr-20 flex items-center justify-between">
             {/* <a className="text-xl-bold text-primary flex items-center" href="/#hero">
@@ -86,7 +104,7 @@ export const NavBar = () => {
                         <a key={key}
                             href={item.href}
                             className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={() => handleClick(item.href)}
                         >
                             {item.name}
                         </a>
