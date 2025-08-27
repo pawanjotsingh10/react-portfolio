@@ -19,14 +19,27 @@ export const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.screenY > 10)
+            setIsScrolled(window.scrollY > 10)
         }
 
+        const handleClick=()=>{
+            setIsMenuOpen(false);
+        }
+
+        if (isMenuOpen) {
+            document.addEventListener("click", handleClick);
+          }
+
         window.addEventListener("scroll", handleScroll)
-        return () => window.removeEventListener("scroll", handleScroll)
+        return () => {window.removeEventListener("scroll", handleScroll)
+                    document.removeEventListener("click", handleClick);}
         // To take care of memory leaks/stacking of event listeners
 
-    }, [])
+        
+
+    }, [isMenuOpen])
+
+    
 
     return <nav className={`fixed w-full z-40 transition-all duration-300 
                 ${isScrolled ? "py-6 bg-background/90  backdrop-blue-md shadow-md" : "py-9"}`}>
@@ -43,7 +56,7 @@ export const NavBar = () => {
             <div className="hidden md:flex space-x-8">
                 {/* Hide the nav items in screens smaller than md*/}
                 {navItems.map((item, key) => (
-                    <a key={item.key} href={item.href} 
+                    <a key={key} href={item.href} 
                     // className="text-foreground/80 px-2 py-1 rounded hover:underline hover:decoration-2 hover:decoration-primary transition-colors duration-300">
                     className="text-foreground/80 px-2 py-1 rounded hover:bg-primary hover:text-white transition-all duration-300">
                     {/* className="relative px-3 py-3 rounded-full text-foreground/80 hover:bg-primary hover:text-white transition-all duration-300"> */}
@@ -54,7 +67,10 @@ export const NavBar = () => {
 
             {/* mobile nav */}
             <button
-                onClick={() => setIsMenuOpen((prev) => !prev)}
+            onClick={(e) => {
+                e.stopPropagation(); // prevent document click from closing immediately
+                setIsMenuOpen((prev) => !prev);
+              }}
                 className="md:hidden fixed top-6 left-8 md:top-3 text-foreground z-50"
                 // button is visible only on small screens
                 aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
@@ -67,7 +83,7 @@ export const NavBar = () => {
                 {/* inset-0 is shortcut for top-0 right-0 bottom-0 left-0  -- so the div covers entire screen*/}
                 <div className="flex flex-col space-y-8 text-xl">
                     {navItems.map((item, key) => (
-                        <a key={item.key}
+                        <a key={key}
                             href={item.href}
                             className="text-foreground/80 hover:text-primary transition-colors duration-300"
                             onClick={() => setIsMenuOpen(false)}
