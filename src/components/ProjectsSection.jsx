@@ -38,7 +38,7 @@ export const ProjectsSection = () => {
             </h2>
 
             <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
-                Following are the projects I created for practice (Apart from this Online Portfolio!)
+                Following are the projects I created for practice 
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-25">
