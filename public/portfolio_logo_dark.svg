@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .bg{fill:#ffffff;}
+      .mark{fill:none;stroke:#8b5cf6;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;}
+    </style>
+  </defs>
+  <circle class="bg" cx="32" cy="32" r="28"></circle>
+  <path class="mark" d="M23 22 L15 32 L23 42"></path>
+  <path class="mark" d="M41 22 L49 32 L41 42"></path>
+  <path class="mark" d="M31 20 L33 44"></path>
+</svg>
